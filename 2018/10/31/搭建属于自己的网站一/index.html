@@ -83,20 +83,20 @@
 <meta name="keywords" content="tags">
 <meta property="og:type" content="article">
 <meta property="og:title" content="搭建属于自己的网站(一)">
-<meta property="og:url" content="http://yoursite.com/2018/10/31/搭建属于自己的网站-一/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/10/31/搭建属于自己的网站一/index.html">
 <meta property="og:site_name" content="LeeTail">
 <meta property="og:description" content="这次分享一下搭建网站的一些简略步骤。我先在这篇博文分享一下利用iis搭建网站的经过，在后续时间里，我有空会分享一下phpstudy搭建网站以及centos搭建网站的一些坑。咳咳，进入正题。iis是Internet Information Services的缩写,意为互联网信息服务,是由微软公司提供的基于运行MicrosoftWindows的互联网基本服务。最初是Windows NT版本的可选包,随">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2018/10/31/搭建属于自己的网站-一/1.PNG">
-<meta property="og:image" content="http://yoursite.com/2018/10/31/搭建属于自己的网站-一/2.PNG">
-<meta property="og:image" content="http://yoursite.com/2018/10/31/搭建属于自己的网站-一/3.PNG">
-<meta property="og:image" content="http://yoursite.com/2018/10/31/搭建属于自己的网站-一/4.PNG">
-<meta property="og:image" content="http://yoursite.com/2018/10/31/搭建属于自己的网站-一/5.PNG">
-<meta property="og:updated_time" content="2018-10-31T14:02:43.236Z">
+<meta property="og:image" content="http://yoursite.com/2018/10/31/搭建属于自己的网站一/1.PNG">
+<meta property="og:image" content="http://yoursite.com/2018/10/31/搭建属于自己的网站一/2.PNG">
+<meta property="og:image" content="http://yoursite.com/2018/10/31/搭建属于自己的网站一/3.PNG">
+<meta property="og:image" content="http://yoursite.com/2018/10/31/搭建属于自己的网站一/4.PNG">
+<meta property="og:image" content="http://yoursite.com/2018/10/31/搭建属于自己的网站一/5.PNG">
+<meta property="og:updated_time" content="2018-10-31T14:14:19.504Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建属于自己的网站(一)">
 <meta name="twitter:description" content="这次分享一下搭建网站的一些简略步骤。我先在这篇博文分享一下利用iis搭建网站的经过，在后续时间里，我有空会分享一下phpstudy搭建网站以及centos搭建网站的一些坑。咳咳，进入正题。iis是Internet Information Services的缩写,意为互联网信息服务,是由微软公司提供的基于运行MicrosoftWindows的互联网基本服务。最初是Windows NT版本的可选包,随">
-<meta name="twitter:image" content="http://yoursite.com/2018/10/31/搭建属于自己的网站-一/1.PNG">
+<meta name="twitter:image" content="http://yoursite.com/2018/10/31/搭建属于自己的网站一/1.PNG">
 
 
 
@@ -126,7 +126,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/31/搭建属于自己的网站-一/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/31/搭建属于自己的网站一/"/>
 
 
 
@@ -313,7 +313,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/31/搭建属于自己的网站-一/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/31/搭建属于自己的网站一/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Leetail">
@@ -380,7 +380,7 @@
       
 
       
-        <p>这次分享一下搭建网站的一些简略步骤。我先在这篇博文分享一下利用iis搭建网站的经过，在后续时间里，<br>我有空会分享一下phpstudy搭建网站以及centos搭建网站的一些坑。<br>咳咳，进入正题。<br>iis是Internet Information Services的缩写,意为互联网信息服务,是由微软公司提供的基于运行MicrosoftWindows的互联网基本服务。最初是Windows NT版本的可选包,随后内置在Windows 2000、Windows XP Professional和Windows Server 2003一起发行，但在Windows XP Home版本上并没有IIS。IIS是一种Web（网页）服务组件，其中包括Web服务器、FTP服务器、NNTP服务器和SMTP服务器，分别用于网页浏览、文件传输、新闻服务和邮件发送等方面，它使得在网络（包括互联网和局域网）上发布信息成了一件很容易的事。（摘自百度百科）<br>简单点来说，iis就类似于一种容器(web容器)用来存放我们的网页文件资源。<br>(⊙o⊙)…首先我们要准备好iis，这里有两种选择，一是利用自己真机的win10系统自带的iis(并不建议),我们搭网站<br>只是用来实验，完全没有必要在真机上实践。二是利用微软的服务器系统，有2003,2008,2012以及2016这几个版本，我个人用的是2012的，看自己选择。 至于镜像的话，我就不提供了，自行百度(windows server 2012 r2)，版本自己改就行，<br>进官网下载就行，网上也有安装windows server 2012 r2的教程。下载好镜像后，关于虚拟机，有两种，一个是VMWare（收费的），另一个是VistualBox（orale的，免费的），也可以用破解版，自行百度下载即可以。<br>当虚拟机安装好后，创建一个windows server 2012 r2的虚拟机，然后打开，配好自己的系统后，系统会自动打开一个服务器管理器。<br><img src="/2018/10/31/搭建属于自己的网站-一/1.PNG" alt=""><br>然后点击管理，在点击添加角色和功能向导<br><img src="/2018/10/31/搭建属于自己的网站-一/2.PNG" alt=""><br>然后下一步，直到服务器角色<br><img src="/2018/10/31/搭建属于自己的网站-一/3.PNG" alt=""><br>然后点击自己要安装的角色，这里我选择了iis，也可以多选其它，比如我选了DNS，也可以选FTP等等。然后下一步<br><img src="/2018/10/31/搭建属于自己的网站-一/4.PNG" alt=""><br>然后进入功能选择，默认就行。下一步<br><img src="/2018/10/31/搭建属于自己的网站-一/5.PNG" alt=""><br>添加角色服务，根据自己需要勾选就行，下一步，直到安装完成就行。最后就不附图了。</p>
+        <p>这次分享一下搭建网站的一些简略步骤。我先在这篇博文分享一下利用iis搭建网站的经过，在后续时间里，<br>我有空会分享一下phpstudy搭建网站以及centos搭建网站的一些坑。<br>咳咳，进入正题。<br>iis是Internet Information Services的缩写,意为互联网信息服务,是由微软公司提供的基于运行MicrosoftWindows的互联网基本服务。最初是Windows NT版本的可选包,随后内置在Windows 2000、Windows XP Professional和Windows Server 2003一起发行，但在Windows XP Home版本上并没有IIS。IIS是一种Web（网页）服务组件，其中包括Web服务器、FTP服务器、NNTP服务器和SMTP服务器，分别用于网页浏览、文件传输、新闻服务和邮件发送等方面，它使得在网络（包括互联网和局域网）上发布信息成了一件很容易的事。（摘自百度百科）<br>简单点来说，iis就类似于一种容器(web容器)用来存放我们的网页文件资源。<br>(⊙o⊙)…首先我们要准备好iis，这里有两种选择，一是利用自己真机的win10系统自带的iis(并不建议),我们搭网站只是用来实验，完全没有必要在真机上实践。二是利用微软的服务器系统，有2003,2008,2012以及2016这几个版本，我个人用的是2012的，看自己选择。 至于镜像的话，我就不提供了，自行百度(windows server 2012 r2)，版本自己改就行，进官网下载就行，网上也有安装windows server 2012 r2的教程。下载好镜像后，关于虚拟机，有两种，一个是VMWare（收费的），另一个是VistualBox（orale的，免费的），也可以用破解版，自行百度下载即可以。<br>当虚拟机安装好后，创建一个windows server 2012 r2的虚拟机，然后打开，配好自己的系统后，系统会自动打开一个服务器管理器。<br><img src="/2018/10/31/搭建属于自己的网站一/1.PNG" alt=""><br>然后点击管理，在点击添加角色和功能向导<br><img src="/2018/10/31/搭建属于自己的网站一/2.PNG" alt=""><br>然后下一步，直到服务器角色<br><img src="/2018/10/31/搭建属于自己的网站一/3.PNG" alt=""><br>然后点击自己要安装的角色，这里我选择了iis，也可以多选其它，比如我选了DNS，也可以选FTP等等。然后下一步<br><img src="/2018/10/31/搭建属于自己的网站一/4.PNG" alt=""><br>然后进入功能选择，默认就行。下一步<br><img src="/2018/10/31/搭建属于自己的网站一/5.PNG" alt=""><br>添加角色服务，根据自己需要勾选就行，下一步，直到安装完成就行。最后就不附图了。</p>
 <p>分享：这次就给大家推荐本书吧！《时间简史》，激发一下童年的想象。<br>有关matlab的资源链接：<a href="https://pan.baidu.com/s/1ZqxLUT5tMDUp9fvOqTiYuw" target="_blank" rel="noopener">https://pan.baidu.com/s/1ZqxLUT5tMDUp9fvOqTiYuw</a><br>提取码：vswv<br>PS:博客优化还在持续中，这次添加了一些特效。因为快考试了，实在没有空闲时间写博文，有什么错误可以指出（暂时没有评论功能，抱歉）</p>
 
       
